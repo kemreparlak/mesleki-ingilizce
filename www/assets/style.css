@@ -1,0 +1,148 @@
+body {
+	font-family: 'Roboto';
+	background: #FFFA9D;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.clearfix { clear:both; }
+.genel {
+	width: 90%;
+	text-align:center;
+}
+
+
+#column {
+	background: #fff;
+	padding: 40px;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px rgba(0,0,0,.1);
+	text-transform: none;
+}
+
+.logo {
+	margin: 20px;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.word {
+	font-size: 45px;
+	color: #626EEF;
+}
+
+.word .translate {
+	margin-top: 10px !important;
+	color: #aaa;
+}
+
+.active {
+	opacity: 0;
+}
+
+.button {
+	margin-top: 15px;
+	color: #fff;
+	background: #626EEF;
+	padding: 15px;
+	border-radius: 5px;
+	cursor: pointer;
+	border: 0;
+	outline: none;
+	width: 100%;
+}
+.button.goster {
+	background: #35e05a;
+}
+.button:active {
+	background: #3744ce;
+}
+
+.link {
+	margin-top: 20px;
+}
+.link a {
+	text-decoration: none;
+	color: #333;
+	text-transform: none;
+
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    ;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+	border-radius: 8px
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.addWord label {
+	text-transform: none;
+}
+.addWord input {
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	box-shadow: 3px 3px 3px rgba(0,0,0,.1);
+	height: 30px;
+	padding: 4px;
+	margin-top: 10px;
+	outline: none;
+}
+
+.addWord .clearfix {
+	margin: 30px;
+}
+
+.addWord button {
+	background: #626EEF;
+	border: 0;
+	color: #fff;
+	border-radius: 4px;
+	padding: 10px 40px;
+	font-size: 17px;
+}
+
+.error_none{
+	display: none;
+}
+.error {
+	display: block !important;
+}
+
+.modal-content {
+	animation-delay: .3s;
+	animation-duration: .3s;
+}

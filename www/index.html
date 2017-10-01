@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Mesleki İngilizce</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="assets/style.css">
+	<link rel="stylesheet" href="assets/animate.css">
+</head>
+<body>
+
+	<div class="genel" id="app">
+		
+		<div class="logo">
+			MESLEKİ İNGİLİZCE
+		</div>
+
+		<div id="column">
+	
+			<div class="word">
+				<span class="original">{{ orjinalModel }}</span>
+				<div class="clearfix"></div>
+				<span class="translate" v-bind:class="{ 'active' : active }">{{ ceviriModel }}</span>
+			</div>
+
+			<button class="button goster" v-on:click="show">GÖSTER</button>
+			<div class="clearfix"></div>
+			<button class="button" v-on:click="refresh">YENİLE</button>
+
+		</div>
+
+		<div class="link">
+			<a href="#" id="myBtn">Yeni Kelime Ekle</a>
+		</div>
+
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+
+			<!-- Modal content -->
+			<div class="modal-content fadeInDown animated">
+				<span class="close">&times;</span>
+				<div class="addWord">
+					<div class="clearfix error_none" v-bind:class="{ 'error' : eklenemedi }">
+						<font color="red">Bu kelimeyi daha önce eklediniz.</font>
+					</div>
+					<div class="clearfix">
+						<label>Orjinal Kelime</label> <br>
+						<input type="text" v-model="original">
+					</div>
+					<div class="clearfix">
+						<label>Çevirisi</label> <br>
+						<input type="text" v-model="translate">
+					</div>
+					<div class="clearfix">
+						<button v-on:click="addWord(original,translate)">Ekle</button>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<script src="assets/vue.js"></script>
+	<script src="assets/app.js"></script>
+</body>
+</html>
