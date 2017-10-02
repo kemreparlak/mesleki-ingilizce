@@ -44,6 +44,9 @@
 					<div class="clearfix error_none" v-bind:class="{ 'error' : eklenemedi }">
 						<font color="red">Bu kelimeyi daha önce eklediniz.</font>
 					</div>
+					<div class="clearfix error_none" v-bind:class="{ 'error' : basarili }">
+						<font color="green">Kelime Başarıyla Eklendi</font>
+					</div>
 					<div class="clearfix">
 						<label>Orjinal Kelime</label> <br>
 						<input type="text" v-model="original">

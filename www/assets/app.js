@@ -8,6 +8,7 @@ var app = new Vue({
 		ceviriModel: "Hoşgeldin",
 		active: 1,
 		eklenemedi: false,
+		basarili: false,
 		originalWord: null,
 		translateWord: null,
 		original: null,
@@ -40,7 +41,10 @@ var app = new Vue({
 				}else{
 					oWords.push( originalWordPar );
 					tWords.push( translateWordPar );
+					this.original = "";
+					this.translate = "";
 					this.eklenemedi = false;
+					this.basarili = true;
 				}
 				
 			}
